@@ -1,0 +1,19 @@
+# ── Core data engine ──────────────────────────────────────────────
+yfinance>=0.2.31
+pandas>=2.0
+numpy>=1.24
+
+# ── Dashboard (Streamlit + Plotly) ────────────────────────────────
+streamlit>=1.30
+plotly>=5.18,<6          # Plotly 5.x for kaleido 0.2.x compat
+
+# ── Static chart export (Plotly → PNG for video frames) ──────────
+kaleido==0.2.1           # Self-contained; no Chrome needed
+
+# ── Video generation ─────────────────────────────────────────────
+moviepy>=2.0             # MoviePy v2 API
+gTTS>=2.4.0              # Free TTS fallback (Google Translate TTS)
+
+# ── Optional: ElevenLabs high-quality TTS ─────────────────────────
+# Set the ELEVENLABS_API_KEY env variable to enable.
+requests>=2.31
